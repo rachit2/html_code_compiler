@@ -1,0 +1,5 @@
+<%= form_tag upload_path, multipart: true, class: "ui form" do %>
+  <%= file_field_tag :file, class: "ui button green" %>
+  <br><br>
+  <%= submit_tag "Compile", class: "ui button" %>
+<% end %>

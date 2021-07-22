@@ -1,0 +1,5 @@
+<%= render partial: 'form' %>
+<br>
+<% if params[:errors].present? %>
+  <strong>Error</strong><%= sanitize params[:errors] %>
+<%end%>
