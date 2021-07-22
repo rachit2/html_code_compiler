@@ -31,17 +31,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("parallax.jpg");
+  background-image: url("../parallax.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("parallax2.jpg");
+  background-image: url("../parallax2.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("parallax3.jpg");
+  background-image: url("../parallax3.jpg");
   min-height: 400px;
 }
 
