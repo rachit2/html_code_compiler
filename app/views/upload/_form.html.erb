@@ -1,5 +1,6 @@
-<%= form_tag upload_path, multipart: true, class: "ui form" do %>
-  <%= file_field_tag :file, class: "ui button green" %>
-  <br><br>
-  <%= submit_tag "Compile", class: "ui button" %>
-<% end %>
+<br><br>
+<%= file_field_tag :file, class: "ui button green" %>
+<br><br>
+<button id="compile" data-method='get' data-remote="true" onclick='change()'>Compile</button>
+<br>
+<div id = "error_data"></div>

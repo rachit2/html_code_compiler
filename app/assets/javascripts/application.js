@@ -13,4 +13,30 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
+
+
+
+function change()
+{
+    var file = $('#file')[0].files[0]
+    var fd = new FormData();
+    fd.append('file', file);
+    $.ajax({
+        url: '/upload',
+        type: 'POST',
+        processData: false,
+        contentType:false,
+        data: fd,
+        success: function (data, status, jqxhr) {
+            $('#error_data').html('<br>' + data['error']);
+        },
+        error: function (jqxhr, status, msg) {
+            alert('Something went wrong, empty data?')
+        }
+    });
+
+}
